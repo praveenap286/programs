@@ -1,0 +1,30 @@
+
+#include <stdio.h>
+
+int main()
+{
+    char ope;
+    double a,b;
+
+    scanf("%lf%lf%s",&a,&b,&ope);
+
+    switch(ope)
+    {
+        case '+':
+            printf("%.1lf + %.1lf = %.1lf", a,b,a+b);
+            break;
+        case '-':
+            printf("%.1lf - %.1lf = %.1lf", a,b,a-b);
+            break;
+        case '*':
+            printf("%.1lf * %.1lf = %.1lf", a,b,a*b);
+            break;
+        case '/':
+            printf("%.1lf / %.1lf = %.1lf",a,b,a/b);
+            break;
+        default:
+            printf("INVALID");
+    }
+
+    return 0;
+}
